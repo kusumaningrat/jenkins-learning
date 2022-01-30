@@ -11,7 +11,7 @@ pipeline {
         
         stage('Checkout Source') {
             steps {
-                git 'https://github.com/Kusuma16/jenkins-learning.git'
+                git credentialsId: 'gitauth', url: 'https://github.com/Kusuma16/jenkins-learning.git'
             }
         }
 
